@@ -1,29 +1,33 @@
 import streamlit as st
+import time
 
+# App title
 st.title("Room Design AI App")
 
-image = st.file_uploader("Upload room image", type=["jpg","png"])
+# Image upload
+image = st.file_uploader("Upload room image", type=["jpg", "png"])
 
 if image:
     st.image(image, caption="Original Room")
 
+# Room type selection
 room_type = st.selectbox(
     "Select Room Type",
-    ["Bedroom", "Living Room", "Office"]
+    ["Bedroom", "Living Room", "Office"],
+    key="room_type"
 )
 
+# Design style selection
 style = st.selectbox(
     "Select Design Style",
-    ["Modern", "Minimalist", "Luxury"]
+    ["Modern", "Minimalist", "Luxury"],
+    key="design_style"
 )
 
-if st.button("Design My Room"):
-    st.write("Designing your room...")
-    
-
-if st.button("Design My Room"):
+# Single button only
+if st.button("Design My Room", key="design_btn"):
     with st.spinner("AI is redesigning your room..."):
-        st.sleep(2)
+        time.sleep(2)   # simulate AI work
 
     st.success("Design Completed!")
 
