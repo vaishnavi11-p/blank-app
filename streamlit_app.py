@@ -21,3 +21,21 @@ if st.button("Design My Room"):
     st.write("Designing your room...")
     
 
+if st.button("Design My Room"):
+    with st.spinner("AI is redesigning your room..."):
+        st.sleep(2)
+
+    st.success("Design Completed!")
+
+    st.subheader("AI Design Suggestions 🧠")
+
+    st.write(f"""
+    **Room Type:** {room_type}  
+    **Style Chosen:** {style}
+
+    ### Suggested Design:
+    - Use light and neutral wall colors
+    - Add minimal furniture to increase space
+    - Prefer warm lighting for comfort
+    - Place plants or artwork for aesthetics
+    """)
