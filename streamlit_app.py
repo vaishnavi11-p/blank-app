@@ -20,7 +20,4 @@ style = st.selectbox(
 if st.button("Design My Room"):
     st.write("Designing your room...")
     
-if st.button("Design My Room"):
-    st.success("Design request received!")
-    st.write("Room Type:", room_type)
-    st.write("Design Style:", style)
+
