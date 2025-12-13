@@ -17,3 +17,5 @@ style = st.selectbox(
     ["Modern", "Minimalist", "Luxury"]
 )
 
+if st.button("Design My Room"):
+    st.write("Designing your room...")
