@@ -65,7 +65,7 @@ st.download_button(
 
 
     # AI suggestions
-   st.subheader("AI Design Suggestions 🧠")
+st.subheader("AI Design Suggestions 🧠")
 
 if room_type == "Bedroom":
     suggestions = [
@@ -93,6 +93,7 @@ for s in suggestions:
     st.write("•", s)
 
 st.success("AI analyzed lighting, layout, and space efficiency")
+
 
 
 image_comparison(
