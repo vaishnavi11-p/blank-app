@@ -9,7 +9,7 @@ st.title("Room Design AI App 🏠")
 image = st.file_uploader("Upload room image", type=["jpg", "png"])
 
 if image:
-    st.image(image, caption="Original Room", use_column_width=True)
+    st.image(image, caption="Original Room", use_container_width=True)
 
 # Select room type
 room_type = st.selectbox(
