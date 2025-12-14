@@ -65,34 +65,7 @@ st.download_button(
 
 
     # AI suggestions
-st.subheader("AI Design Suggestions 🧠")
 
-if room_type == "Bedroom":
-    suggestions = [
-        "Soft ambient lighting near the bed",
-        "Neutral colors with warm accents",
-        "Minimal furniture for calm atmosphere"
-    ]
-elif room_type == "Living Room":
-    suggestions = [
-        "Central seating arrangement",
-        "Accent wall behind sofa",
-        "Layered lighting for depth"
-    ]
-else:
-    suggestions = [
-        "Ergonomic desk placement",
-        "Natural lighting optimization",
-        "Cable-free clean layout"
-    ]
-
-st.write(f"**Room Type:** {room_type}")
-st.write(f"**Design Style:** {style}")
-
-for s in suggestions:
-    st.write("•", s)
-
-st.success("AI analyzed lighting, layout, and space efficiency")
 
 
 
